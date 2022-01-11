@@ -1,3 +1,5 @@
-FROM        --platform=$TARGETOS/$TARGETARCH alpine:latest
+FROM    alpine:latest
 
-RUN         apk add --update --no-cache ca-certificates curl git jq wget
+LABEL   org.opencontainers.image.source="https://github.com/slack69/hosting-node-containers"
+
+RUN     apk add --update --no-cache ca-certificates curl git jq wget

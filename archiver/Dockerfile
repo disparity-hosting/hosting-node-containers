@@ -1,3 +1,5 @@
-FROM        --platform=$TARGETOS/$TARGETARCH alpine:latest
+FROM    alpine:latest
 
-RUN         apk add --update --no-cache tar
+LABEL   org.opencontainers.image.source="https://github.com/slack69/hosting-node-containers"
+
+RUN     apk add --update --no-cache tar
