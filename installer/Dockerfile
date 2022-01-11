@@ -1,0 +1,3 @@
+FROM        --platform=$TARGETOS/$TARGETARCH alpine:latest
+
+RUN         apk add --update --no-cache ca-certificates curl git jq wget
