@@ -8,7 +8,7 @@ on:
       - master
 jobs:
   push:
-    name: "installers:{{ matrix.tag }}"
+    name: "{{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
